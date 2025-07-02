@@ -19,7 +19,7 @@ from django.urls import path, re_path
 from djangoapp import views
 
 urlpatterns = [
-    path('product/<int:id/>', views),
+    path('product/<int:id/>', views.product),
     re_path('^/profile/<username>/post/<post_id>/', views.profile),
     path('greeting/<str:name>', views.greeting)
 ]
